@@ -1,4 +1,5 @@
 import { useState } from "react";
+import pen from './img/pen.png'
 
 export default function App() {
   const [todos, setTodos] = useState([])
@@ -53,7 +54,7 @@ export default function App() {
               <li key={id}>
                 <h3>{title}</h3>
                 <button onClick={() => removeTodo(id)}>Delete</button>
-                <button onClick={() => editTodo(id)}>Edit <img src="../public/img/pen.png"/></button>
+                <button onClick={() => editTodo(id)}>Edit <img src={pen}/></button>
               </li>
             )
           })
